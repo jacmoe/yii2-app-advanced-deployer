@@ -116,7 +116,7 @@ or
 dep deploy local
 ~~~
 
-
-CONFIGURATION
--------------
-The configuration is handled automatically from the values you wrote in `servers.yml`.
+KNOWN ISSUES
+------------
+Currently, it is not possible to make the configuration files shared.  
+Not sure why, so the section has been commented out in the yii2 advanced recipe.
