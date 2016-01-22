@@ -1,16 +1,12 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "jacmoe/yii2-app-advanced-deployer",
+    "description": "Yii 2 Advanced Project Template with Deployer.php support",
+    "keywords": ["yii2", "framework", "advanced", "deployer", "project template"],
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/jacmoe/yii2-app-advanced-deployer/issues?state=open",
+        "source": "https://github.com/jacmoe/yii2-app-advanced-deployer"
     },
     "minimum-stability": "dev",
     "require": {
