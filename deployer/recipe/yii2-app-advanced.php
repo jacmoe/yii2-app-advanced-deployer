@@ -21,17 +21,18 @@ set('shared_dirs', [
     'console/runtime',
 ]);
 
+// These cannot be shared (for some reason):
 // Yii 2 Advanced Project Template shared files
-set('shared_files', [
-    'common/config/main-local.php',
-    'common/config/params-local.php',
-    'frontend/config/main-local.php',
-    'frontend/config/params-local.php',
-    'backend/config/main-local.php',
-    'backend/config/params-local.php',
-    'console/config/main-local.php',
-    'console/config/params-local.php',
-]);
+// set('shared_files', [
+//     'common/config/main-local.php',
+//     'common/config/params-local.php',
+//     'frontend/config/main-local.php',
+//     'frontend/config/params-local.php',
+//     'backend/config/main-local.php',
+//     'backend/config/params-local.php',
+//     'console/config/main-local.php',
+//     'console/config/params-local.php',
+// ]);
 
 /**
  * Initialization
