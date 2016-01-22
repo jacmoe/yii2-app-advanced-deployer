@@ -21,6 +21,9 @@ Thumbs.db
 # composer itself is not needed
 composer.phar
 
+# ignore deployer if present
+deployer.phar
+
 # Mac DS_Store Files
 .DS_Store
 

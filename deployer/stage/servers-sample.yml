@@ -1,0 +1,22 @@
+# list servers
+# -------------
+prod_1:
+    host: hostname
+    user: username
+    password: password
+    stage: production
+    repository: https://github.com/user/repository.git
+    deploy_path: /var/www
+    app:
+        debug: false
+        stage: Production
+
+dev_1:
+    host: localhost
+    user: username
+    password: password
+    stage: local
+    deploy_path: /home/user/www
+    app:
+        debug: true
+        stage: Development
