@@ -1,7 +1,7 @@
-Yii 2 Advanced Project Template
-===============================
+Yii 2 Advanced Project Template with Deployer.php support
+=========================================================
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+Yii 2 Advanced Project Template with Deployer.php support is a skeleton [Yii 2](http://www.yiiframework.com/) application for
 developing complex Web applications with multiple tiers.
 
 The template includes three tiers: front end, back end, and console, each of which
@@ -16,7 +16,7 @@ Documentation is at [docs/guide/README.md](docs/guide/README.md).
 [![Total Downloads](https://poser.pugx.org/jacmoe/yii2-app-advanced-deployer/downloads.png)](https://packagist.org/packages/jacmoe/yii2-app-advanced-deployer)
 
 HOW IS THIS DIFFERENT FROM STANDARD ADVANCED APP?
-----------------------------------------------
+-------------------------------------------------
 * This project can be deployed by Deployer
 * An `.htaccess` is added to the `frontend/web` and `backend/web` folders and *FollowSymlinks* is turned on.
 
