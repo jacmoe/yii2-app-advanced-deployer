@@ -53,7 +53,6 @@ task('deploy:configure', function () {
         ->in(getcwd() . $configFiles);
 
     $tmpDir = sys_get_temp_dir();
-    $deployDir = env('deploy_path');
     $releaseDir = env('release_path');
 
     /* @var $file \Symfony\Component\Finder\SplFileInfo */
@@ -80,8 +79,8 @@ task('deploy:configure', function () {
                         upload($tmpFile, "$releaseDir/" . $target);
                         run('chmod +x ' . "$releaseDir/" . $target);
                     } else {
-                        run("mkdir -p $deployDir/shared/" . dirname($target));
-                        upload($tmpFile, "$deployDir/shared/" . $target);
+                        run("mkdir -p $releaseDir/" . dirname($target));
+                        upload($tmpFile, "$releaseDir/" . $target);
                     }
                     $success = true;
                 }

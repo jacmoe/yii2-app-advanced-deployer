@@ -21,24 +21,6 @@ set('shared_dirs', [
     'console/runtime',
 ]);
 
-// Yii 2 Advanced Project Template shared files
-set('shared_files', [
-    'common/config/main-local.php',
-    'common/config/params-local.php',
-    'frontend/config/main-local.php',
-    'frontend/config/params-local.php',
-    'frontend/web/index.php',
-    'frontend/web/.htaccess',
-    'backend/config/main-local.php',
-    'backend/config/params-local.php',
-    'backend/web/index.php',
-    'backend/web/.htaccess',
-    'console/config/main-local.php',
-    'console/config/params-local.php',
-    'yii',
-]);
-
-
 set('writable_dirs', [
     'backend/runtime',
     'backend/web/assets',
