@@ -78,13 +78,6 @@ chmod +x /usr/local/bin/dep
 ~~~
 For more, see [Deployer - Installation](http://deployer.org/docs/installation)
 
-## Local deployment
-If you plan on using deployer to deploy locally, you need to install *openssh-server*:
-~~~
-sudo apt-get install openssh-server
-~~~
-That allows you to *ssh* into your local machine.
-
 
 INSTALLATION
 ------------

@@ -17,6 +17,7 @@ prod_1:
             dbname: dbname
 
 dev_1:
+    local: true
     host: localhost
     user: username
     password: password
