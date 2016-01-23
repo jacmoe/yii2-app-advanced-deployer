@@ -8,6 +8,8 @@ if (!file_exists (__DIR__ . '/deployer/stage/servers.yml')) {
 serverList(__DIR__ . '/deployer/stage/servers.yml');
 set('repository', '{{repository}}');
 
+set('default_stage', 'production');
+
 set('keep_releases', 2);
 
 task('deploy:configure_composer', function () {
