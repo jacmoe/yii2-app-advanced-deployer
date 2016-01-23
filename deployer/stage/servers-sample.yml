@@ -22,6 +22,7 @@ dev_1:
     user: username
     password: password
     stage: local
+    repository: https://github.com/user/repository.git
     deploy_path: /home/user/www
     app:
         stage: 'dev'
