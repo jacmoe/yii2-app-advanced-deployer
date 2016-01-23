@@ -8,8 +8,13 @@ prod_1:
     repository: https://github.com/user/repository.git
     deploy_path: /var/www
     app:
-        debug: false
-        stage: Production
+        stage: 'prod'
+
+        mysql:
+            host: db_server
+            username: dbuser
+            password: dbpassword
+            dbname: dbname
 
 dev_1:
     host: localhost
@@ -18,5 +23,10 @@ dev_1:
     stage: local
     deploy_path: /home/user/www
     app:
-        debug: true
-        stage: Development
+        stage: 'dev'
+
+        mysql:
+            host: localhost
+            username: dbuser
+            password: dbpassword
+            dbname: dbname
