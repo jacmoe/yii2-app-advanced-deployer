@@ -19,6 +19,7 @@ HOW IS THIS DIFFERENT FROM STANDARD ADVANCED APP?
 -------------------------------------------------
 * This project can be deployed by Deployer
 * An `.htaccess` is added to the `frontend/web` and `backend/web` folders and *FollowSymlinks* is turned on.
+* Init script has been removed because Deployer configures the project according to the values in `deployer/stage/servers.yml`.
 
 
 DIRECTORY STRUCTURE
