@@ -1,5 +1,5 @@
 <?php
-// this recipe has been slightly modified to take different
+// this recipe has been modified to take different
 // environments into account
 
 /* (c) Alexey Rogachev <arogachev90@gmail.com>
@@ -21,25 +21,30 @@ set('shared_dirs', [
     'console/runtime',
 ]);
 
-// These cannot be shared (for some reason):
 // Yii 2 Advanced Project Template shared files
-// set('shared_files', [
-//     'common/config/main-local.php',
-//     'common/config/params-local.php',
-//     'frontend/config/main-local.php',
-//     'frontend/config/params-local.php',
-//     'backend/config/main-local.php',
-//     'backend/config/params-local.php',
-//     'console/config/main-local.php',
-//     'console/config/params-local.php',
-// ]);
+set('shared_files', [
+    'common/config/main-local.php',
+    'common/config/params-local.php',
+    'frontend/config/main-local.php',
+    'frontend/config/params-local.php',
+    'frontend/web/index.php',
+    'frontend/web/.htaccess',
+    'backend/config/main-local.php',
+    'backend/config/params-local.php',
+    'backend/web/index.php',
+    'backend/web/.htaccess',
+    'console/config/main-local.php',
+    'console/config/params-local.php',
+    'yii',
+]);
 
-/**
- * Initialization
- */
-task('deploy:init', function () {
-    run('php {{release_path}}/init --env={{app.stage}} --overwrite=n');
-})->desc('Initialization');
+
+set('writable_dirs', [
+    'backend/runtime',
+    'backend/web/assets',
+    'frontend/runtime',
+    'frontend/web/assets',
+]);
 
 /**
  * Run migrations
@@ -51,14 +56,13 @@ task('deploy:run_migrations', function () {
 /**
  * Main task
  */
+// Migrations turned off - for now
 task('deploy', [
     'deploy:prepare',
     'deploy:release',
     'deploy:update_code',
     'deploy:shared',
     'deploy:vendors',
-    'deploy:init',
-    'deploy:run_migrations',
     'deploy:symlink',
     'cleanup',
 ])->desc('Deploy your project');
