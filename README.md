@@ -114,3 +114,12 @@ dep deploy local
 
 **Note** that the server configuration for the local stage needs to have a key called `local` because that will make Deployer create a local server that doesn't use ssh.  
 If the active stage does not have local set for the server, you need an ssh server on your local machine (`sudo apt-get install openssh-server`).
+
+#### Configure without deploy
+It is very common to serve the project in place when developing, and therefore this project template ships with a function to configure files, set writable directories and install vendors.
+
+Simply run:
+~~~
+dep inplace local
+~~~
+This command assumes that you've set the deploy dir in the `servers.yml` configuration file to point to your current source directory (the directory you are in).
