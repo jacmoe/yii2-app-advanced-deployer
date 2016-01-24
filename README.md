@@ -39,6 +39,9 @@ console
 deployer
     recipe/              contains deployer recipes
     stage/               contains deployer server configurations
+    environments/        contains environment based templates
+                         configured by Deployer according to
+                         the values in `deployer/stage/servers.yml`
 backend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains backend configurations
@@ -57,9 +60,6 @@ frontend
     web/                 contains the entry script and Web resources
     widgets/             contains frontend widgets
 vendor/                  contains dependent 3rd-party packages
-environments/            contains environment based templates
-                         configured by Deployer according to
-                         the values in `deployer/stage/servers.yml`
 tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
