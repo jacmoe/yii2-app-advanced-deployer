@@ -38,14 +38,12 @@ task('deploy:run_migrations', function () {
 /**
  * Main task
  */
-// Migrations turned off - for now
 task('deploy', [
     'deploy:prepare',
     'deploy:release',
     'deploy:update_code',
     'deploy:shared',
     'deploy:vendors',
-    //'deploy:run_migrations',
     'deploy:symlink',
     'cleanup',
 ])->desc('Deploy your project');

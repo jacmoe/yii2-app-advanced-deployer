@@ -200,10 +200,8 @@ require_once __DIR__ . '/common.php';
   /**
   * Main task
   */
-  // Migrations turned off - for now
   task('inplace', [
     'inplace:vendors',
-    //'inplace:run_migrations',
     'inplace:writable',
     'inplace:configure'
     ])->desc('Deploy your project in place');

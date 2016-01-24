@@ -22,5 +22,9 @@ task('deploy:configure_composer', function () {
   }
 })->desc('Configure composer');
 
+// uncomment the next two lines to run migrations
+//after('deploy:shared', 'deploy:run_migrations');
+//after('inplace:vendors', 'inplace:run_migrations');
+
 before('deploy:vendors', 'deploy:configure_composer');
 before('deploy:symlink', 'deploy:configure');
