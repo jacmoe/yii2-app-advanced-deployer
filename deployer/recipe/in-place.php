@@ -71,10 +71,10 @@ require_once __DIR__ . '/common.php';
       return $contents;
     };
 
-    $configFiles = '/environments/prod';
+    $configFiles = '/deployer/environments/prod';
     $stage = env('app.stage');
     if($stage == 'dev') {
-      $configFiles = '/environments/dev';
+      $configFiles = '/deployer/environments/dev';
     }
 
 
