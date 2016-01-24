@@ -111,3 +111,6 @@ or
 ~~~
 dep deploy local
 ~~~
+
+**Note** that the server configuration for the local stage needs to have a key called `local` because that will make Deployer create a local server that doesn't use ssh.  
+If the active stage does not have local set for the server, you need an ssh server on your local machine (`sudo apt-get install openssh-server`).
