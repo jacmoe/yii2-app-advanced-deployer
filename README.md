@@ -21,6 +21,10 @@ HOW IS THIS DIFFERENT FROM STANDARD ADVANCED APP?
 * An `.htaccess` is added to the `frontend/web` and `backend/web` folders and *FollowSymlinks* is turned on.
 * Init script has been removed because Deployer configures the project according to the values in `deployer/stage/servers.yml`.
 
+HOW DOES IT WORK?
+-----------------
+See my blog post [Deploying Yii with Deployer](https://jacmoe.dk/blog/2016/january/deploying-yii-with-deployer)
+
 
 DIRECTORY STRUCTURE
 -------------------
