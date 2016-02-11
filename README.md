@@ -25,6 +25,10 @@ HOW DOES IT WORK?
 -----------------
 See my blog post [Deploying Yii with Deployer](https://jacmoe.dk/blog/2016/january/deploying-yii-with-deployer)
 
+RELATED
+--------
+See also [yii2-app-basic-deployer](https://github.com/jacmoe/yii2-app-basic-deployer)
+
 
 DIRECTORY STRUCTURE
 -------------------
