@@ -44,12 +44,18 @@ task('local-config', function () {
             return $contents;
         };
 
+        $configFiles = '/deployer/environments/prod';
+        $stage = env('app.stage');
+        if($stage == 'dev') {
+          $configFiles = '/deployer/environments/dev';
+        }
+
         $finder   = new \Symfony\Component\Finder\Finder();
         $iterator = $finder
         ->ignoreDotFiles(false)
         ->files()
         ->name('/\.tpl$/')
-        ->in(getcwd() . '/deployer/templates');
+        ->in(getcwd() . $configFiles);
 
         $tmpDir = sys_get_temp_dir();
         $releaseDir = env('deploy_path');
@@ -64,7 +70,7 @@ task('local-config', function () {
                     $contents = $compiler($file->getContents());
 
                     // cookie validation key
-                    if(basename($file) === 'web.php.tpl') {
+                    if(basename($file) === 'main-local.php.tpl') {
                         $length = 32;
                         $bytes = openssl_random_pseudo_bytes($length);
                         $key = strtr(substr(base64_encode($bytes), 0, $length), '+/=', '_-.');
